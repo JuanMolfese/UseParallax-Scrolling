@@ -1,0 +1,43 @@
+@keyframes scroll {
+    0% {background-position-x: 0px;}
+    100%{background-position-x: -800px;}
+}
+
+.layer{
+   min-height: 500px; 
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-repeat: repeat-x;
+   background-size: cover;
+   animation-name: scroll;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+.layer-5{
+    background-image: url("/ParallaxScrolling/img/5.png");
+    animation-duration: 20s;    
+}
+
+.layer-4{
+    background-image: url("/ParallaxScrolling/img/4.png");
+    animation-duration: 15s;
+}
+
+.layer-3{
+    background-image: url("/ParallaxScrolling/img/3.png");
+    animation-duration: 10s;
+}
+
+.layer-2{
+    background-image: url("/ParallaxScrolling/img/2.png");
+    animation-duration: 8s;
+}
+
+.layer-1{
+    background-image: url("/ParallaxScrolling/img/1.png");
+    animation-duration: 2s;
+}
