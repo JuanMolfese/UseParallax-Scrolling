@@ -4,12 +4,13 @@
     position: absolute;
     left: 0;
     top: 0;    
+    overflow: hidden;
 }
 
-#char{
+.char_run{
     width: 128px;
     height: 128px;
-    background: url('./img/char/char_run.png') left center;
+    background: url('./img/char/char_run.png');
     animation: char_run 1s steps(8) infinite;
     -moz-animation: char_run 1s steps(8) infinite;
     -webkit-animation: char_run 1s steps(8) infinite;
@@ -18,6 +19,32 @@
     margin-left: 150px;
     margin-top: 390px;
     
+}
+
+.char_death{
+    width: 128px;
+    height: 128px;
+    background: url('./img/char/char_death.png');
+    animation: char_death 1.5s steps(10) infinite;
+    -moz-animation: char_death 1.5s steps(10) infinite;
+    -webkit-animation: char_death 1.5s steps(10) infinite;
+    z-index: 99;
+    scale: 2;
+    margin-left: 150px;
+    margin-top: 390px;    
+}
+
+.char_jump{
+    width: 128px;
+    height: 128px;
+    background: url('./img/char/char_jump.png');
+    animation: char_jump 1.3s steps(7) infinite;
+    -moz-animation: char_jump 1.3s steps(7) infinite;
+    -webkit-animation: char_jump 1.3s steps(7) infinite;
+    z-index: 99;
+    scale: 2;
+    margin-left: 150px;
+    margin-top: 390px;   
 }
 
 .layer{
@@ -61,25 +88,48 @@
     z-index: 10;
 }
 
+/* Animacion del background */
 @keyframes scroll {
     0% {background-position-x: 0px;}
     100%{background-position-x: -800px;}
 }
 
+/* Animacion Correr del personaje */
 @keyframes char_run{
     0%{background-position: 0px;}
-    100%{background-position: -1024px;}
-   
+    100%{background-position: -1024px;}   
 }
 
-@-moz-keyframes char_run{
+/* Animacion Morir del personaje */
+@keyframes char_death{
     0%{background-position: 0px;}
-    100%{background-position: -1024px;}
-   
+    100%{background-position: -1280px;}   
+}
+
+/* Animacion Saltar del personaje */
+@keyframes char_jump{
+    0%{background-position: 0px; margin-top: 390px;}
+    50%{margin-top: 150px;}
+    100%{background-position: -896px; margin-top: 390px;}       
+}
+
+
+/* @-webkit-keyframes char_death{
+    0%{background-position: 0px;}
+    100%{background-position: -1280px;}   
+}
+
+@-moz-keyframes char_death{
+    0%{background-position: 0px;}
+    100%{background-position: -1280px;}   
+} */
+
+/* @-moz-keyframes char_run{
+    0%{background-position: 0px;}
+    100%{background-position: -1024px;}   
 }
 
 @-webkit-keyframes char_run{
     0%{background-position: 0px;}
-    100%{background-position: -1024px;}
-   
-}
+    100%{background-position: -1024px;}   
+} */
