@@ -25,23 +25,32 @@
     width: 128px;
     height: 128px;
     background: url('./img/char/char_death.png');
-    animation: char_death 1.5s steps(10) infinite;
-    -moz-animation: char_death 1.5s steps(10) infinite;
-    -webkit-animation: char_death 1.5s steps(10) infinite;
-    z-index: 99;
+    animation: char_death 1.5s steps(10) 1 forwards;
+    -moz-animation: char_death 1.5s steps(10) 1 forwards;
+    -webkit-animation: char_death 1.5s steps(10) 1 forwards;
+    z-index: 2;
     scale: 2;
     margin-left: 150px;
-    margin-top: 390px;    
+    margin-top: 390px;
+    
+   /*  animation-direction: normal;
+    animation-fill-mode: forwards;
+    
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+    
+    -moz-animation-direction: normal;
+    -moz-animation-fill-mode: forwards ; */
 }
 
 .char_jump{
     width: 128px;
     height: 128px;
     background: url('./img/char/char_jump.png');
-    animation: char_jump 1.3s steps(7) infinite;
-    -moz-animation: char_jump 1.3s steps(7) infinite;
-    -webkit-animation: char_jump 1.3s steps(7) infinite;
-    z-index: 99;
+    animation: char_jump 1.3s steps(7) 1;
+    -moz-animation: char_jump 1.3s steps(7) 1;
+    -webkit-animation: char_jump 1.3s steps(7) 1;
+    z-index: 2;
     scale: 2;
     margin-left: 150px;
     margin-top: 390px;   
@@ -60,6 +69,7 @@
    animation-timing-function: linear;
    animation-iteration-count: infinite;
    z-index: -1;
+   animation-play-state: running; /* permite pausar la animacion */
 }
 
 .layer-5{
