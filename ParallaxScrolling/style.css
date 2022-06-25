@@ -1,6 +1,23 @@
-@keyframes scroll {
-    0% {background-position-x: 0px;}
-    100%{background-position-x: -800px;}
+.container{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    top: 0;    
+}
+
+#char{
+    width: 128px;
+    height: 128px;
+    background: url('./img/char/char_run.png') left center;
+    animation: char_run 1s steps(8) infinite;
+    -moz-animation: char_run 1s steps(8) infinite;
+    -webkit-animation: char_run 1s steps(8) infinite;
+    z-index: 2;
+    scale: 2;
+    margin-left: 150px;
+    margin-top: 390px;
+    
 }
 
 .layer{
@@ -15,29 +32,54 @@
    animation-name: scroll;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
+   z-index: -1;
 }
 
 .layer-5{
-    background-image: url("/ParallaxScrolling/img/5.png");
+    background-image: url("/ParallaxScrolling/img/background/5.png");
     animation-duration: 20s;    
 }
 
 .layer-4{
-    background-image: url("/ParallaxScrolling/img/4.png");
+    background-image: url("/ParallaxScrolling/img/background/4.png");
     animation-duration: 15s;
 }
 
 .layer-3{
-    background-image: url("/ParallaxScrolling/img/3.png");
+    background-image: url("/ParallaxScrolling/img/background/3.png");
     animation-duration: 10s;
 }
 
 .layer-2{
-    background-image: url("/ParallaxScrolling/img/2.png");
+    background-image: url("/ParallaxScrolling/img/background/2.png");
     animation-duration: 8s;
 }
 
 .layer-1{
-    background-image: url("/ParallaxScrolling/img/1.png");
+    background-image: url("/ParallaxScrolling/img/background/1.png");
     animation-duration: 2s;
+    z-index: 10;
+}
+
+@keyframes scroll {
+    0% {background-position-x: 0px;}
+    100%{background-position-x: -800px;}
+}
+
+@keyframes char_run{
+    0%{background-position: 0px;}
+    100%{background-position: -1024px;}
+   
+}
+
+@-moz-keyframes char_run{
+    0%{background-position: 0px;}
+    100%{background-position: -1024px;}
+   
+}
+
+@-webkit-keyframes char_run{
+    0%{background-position: 0px;}
+    100%{background-position: -1024px;}
+   
 }
