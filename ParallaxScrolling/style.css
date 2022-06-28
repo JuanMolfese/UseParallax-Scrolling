@@ -15,7 +15,7 @@
     -moz-animation: char_run 1s steps(8) infinite;
     -webkit-animation: char_run 1s steps(8) infinite;
     z-index: 2;
-    scale: 2;
+    transform : scale(2);
     margin-left: 150px;
     margin-top: 390px;
     
@@ -29,7 +29,7 @@
     -moz-animation: char_death 1.5s steps(10) 1 forwards;
     -webkit-animation: char_death 1.5s steps(10) 1 forwards;
     z-index: 2;
-    scale: 2;
+    transform : scale(2);
     margin-left: 150px;
     margin-top: 390px;
     
@@ -51,7 +51,7 @@
     -moz-animation: char_jump 1.3s steps(7) 1;
     -webkit-animation: char_jump 1.3s steps(7) 1;
     z-index: 2;
-    scale: 2;
+    transform : scale(2);
     margin-left: 150px;
     margin-top: 390px;   
 }
@@ -89,12 +89,12 @@
 
 .layer-2{
     background-image: url("./img/background/2.png");
-    animation-duration: 8s;
+    animation-duration: 4s;
 }
 
 .layer-1{
     background-image: url("./img/background/1.png");
-    animation-duration: 2s;
+    animation-duration: 1s;
     z-index: 10;
 }
 
