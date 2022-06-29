@@ -10,7 +10,7 @@
 .char_run{
     width: 128px;
     height: 128px;
-    background: url('./img/char/char_run.png');
+    background: url('./img/char/char_mage_run.png');
     animation: char_run 1s steps(8) infinite;
     -moz-animation: char_run 1s steps(8) infinite;
     -webkit-animation: char_run 1s steps(8) infinite;
@@ -24,10 +24,10 @@
 .char_death{
     width: 128px;
     height: 128px;
-    background: url('./img/char/char_death.png');
-    animation: char_death 1.5s steps(10) 1 forwards;
-    -moz-animation: char_death 1.5s steps(10) 1 forwards;
-    -webkit-animation: char_death 1.5s steps(10) 1 forwards;
+    background: url('./img/char/char_mage_death.png');
+    animation: char_death 1.5s steps(11) 1 forwards;
+    -moz-animation: char_death 1.5s steps(11) 1 forwards;
+    -webkit-animation: char_death 1.5s steps(11) 1 forwards;
     z-index: 2;
     transform : scale(2);
     margin-left: 150px;
@@ -46,10 +46,10 @@
 .char_jump{
     width: 128px;
     height: 128px;
-    background: url('./img/char/char_jump.png');
-    animation: char_jump 1.3s steps(7) 1;
-    -moz-animation: char_jump 1.3s steps(7) 1;
-    -webkit-animation: char_jump 1.3s steps(7) 1;
+    background: url('./img/char/char_mage_jump.png');
+    animation: char_jump 1.3s steps(12) 1;
+    -moz-animation: char_jump 1.3s steps(12) 1;
+    -webkit-animation: char_jump 1.3s steps(12) 1;
     z-index: 2;
     transform : scale(2);
     margin-left: 150px;
@@ -113,14 +113,14 @@
 /* Animacion Morir del personaje */
 @keyframes char_death{
     0%{background-position: 0px;}
-    100%{background-position: -1280px;}   
+    100%{background-position: -1408px;}   
 }
 
 /* Animacion Saltar del personaje */
 @keyframes char_jump{
     0%{background-position: 0px; margin-top: 390px;}
     50%{margin-top: 150px;}
-    100%{background-position: -896px; margin-top: 390px;}       
+    100%{background-position: -1536px; margin-top: 390px;}       
 }
 
 
