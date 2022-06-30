@@ -118,6 +118,22 @@
     z-index: 10;
 }
 
+.coin2{
+    width: 70px;
+    height: 70px;
+    background: url('./img/coins/coin_70_70.png');
+    animation: coin2 1s steps(6) infinite;
+    -moz-animation: coin2 1s steps(6) infinite;
+    -webkit-animation: coin2 1s steps(6) infinite;
+    z-index: 2;
+    transform : scale(0.7);
+    margin-left: 350px;
+    margin-top: -300px; 
+}
+
+
+
+
 /* Animacion del background */
 @keyframes scroll {
     0% {background-position-x: 0px;}
@@ -149,6 +165,12 @@
     100%{background-position: -1538px;}
 }
 
+@keyframes coin2{
+    0%{background-position: 0px;}
+    100%{background-position: -420px;}
+}
+
+
 /* @-webkit-keyframes char_death{
     0%{background-position: 0px;}
     100%{background-position: -1280px;}   
@@ -168,3 +190,4 @@
     0%{background-position: 0px;}
     100%{background-position: -1024px;}   
 } */
+
