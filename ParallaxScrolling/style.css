@@ -17,7 +17,7 @@
     z-index: 2;
     transform : scale(2);
     margin-left: 150px;
-    margin-top: 390px;
+    margin-top: 400px;
     
 }
 
@@ -31,7 +31,7 @@
     z-index: 2;
     transform : scale(2);
     margin-left: 150px;
-    margin-top: 390px;
+    margin-top: 400px;
     
    
     /*
@@ -52,8 +52,23 @@
     z-index: 2;
     transform : scale(2);
     margin-left: 150px;
-    margin-top: 390px;   
+    margin-top: 400px;   
 }
+
+.mob1_run{
+    width: 128px;
+    height: 128px;
+    background: url('./img/char/mob1_run.png');
+    animation: mob1_run 2s steps(12) infinite;
+    -moz-animation: mob1_run 2s steps(12) infinite;
+    -webkit-animation: mob1_run 2s steps(12) infinite;
+    z-index: 2;
+    transform : scale(1.5);
+    margin-left: 570px;
+    margin-top: -90px;
+    
+}
+
 
 .layer{
    min-height: 500px; 
@@ -72,23 +87,29 @@
 }
 
 .layer-5{
-    background-image: url("./img/background/5.png");
-    animation-duration: 20s;    
+    background-image: url("./img/background/11.png");
+    animation-duration: 35s;    
 }
 
 .layer-4{
-    background-image: url("./img/background/4.png");
-    animation-duration: 15s;
+    background-image: url("./img/background/12.png");
+    animation-duration: 25s;
+}
+
+
+.layer-3_5{
+    background-image: url("./img/background/14.png");
+    animation-duration: 20s;
 }
 
 .layer-3{
-    background-image: url("./img/background/3.png");
-    animation-duration: 10s;
+    background-image: url("./img/background/13.png");
+    animation-duration: 15s;
 }
 
 .layer-2{
     background-image: url("./img/background/2.png");
-    animation-duration: 4s;
+    animation-duration: 6s;
 }
 
 .layer-1{
@@ -123,6 +144,10 @@
     100%{background-position: -1536px; margin-top: 390px;}       
 }
 
+@keyframes mob1_run{
+    0%{background-position: 0px;}
+    100%{background-position: -1538px;}
+}
 
 /* @-webkit-keyframes char_death{
     0%{background-position: 0px;}
