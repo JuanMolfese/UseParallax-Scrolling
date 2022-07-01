@@ -4,17 +4,16 @@
     position: relative;
     left: 0;
     top: 0;    
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
 
 .char_run{
     width: 128px;
     height: 128px;
     background: url('./img/char/char_mage_run.png');
-    animation: char_run 1s steps(8) infinite;
-    -moz-animation: char_run 1s steps(8) infinite;
-    -webkit-animation: char_run 1s steps(8) infinite;
+    animation: char_run 0.7s steps(8) infinite;
+    -moz-animation: char_run 0.7s steps(8) infinite;
+    -webkit-animation: char_run 0.7s  steps(8) infinite;
     z-index: 2;
     transform : scale(2);
     position: absolute;
@@ -27,9 +26,9 @@
     width: 128px;
     height: 128px;
     background: url('./img/char/char_mage_death.png');
-    animation: char_death 1.5s steps(11) 1 normal forwards;    
-    -moz-animation: char_death 1.5s steps(11) 1 forwards;
-    -webkit-animation: char_death 1.5s steps(11) 1 forwards;
+    animation: char_death 1.3s steps(11) 1 normal forwards;    
+    -moz-animation: char_death 1.3s steps(11) 1 forwards;
+    -webkit-animation: char_death 1.3s steps(11) 1 forwards;
     z-index: 2;
     transform : scale(2);
     position: absolute;
@@ -70,8 +69,7 @@
     transform : scale(1.5);
     position: absolute;
     margin-left: 570px;
-    margin-top: 440px;
-    
+    margin-top: 440px;    
 }
 
 .coin2{
@@ -86,6 +84,7 @@
     position: absolute;
     margin-left: 350px;
     margin-top: 300px; 
+    
 }
 
 #cartel_loose{
