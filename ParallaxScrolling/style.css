@@ -1,10 +1,11 @@
 .container{
     width: 800px;
     height: 600px;
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0;    
     overflow: hidden;
+    
 }
 
 .char_run{
@@ -16,7 +17,8 @@
     -webkit-animation: char_run 1s steps(8) infinite;
     z-index: 2;
     transform : scale(2);
-    margin-left: 150px;
+    position: absolute;
+    margin-left: 100px;
     margin-top: 400px;
     
 }
@@ -30,7 +32,8 @@
     -webkit-animation: char_death 1.5s steps(11) 1 forwards;
     z-index: 2;
     transform : scale(2);
-    margin-left: 150px;
+    position: absolute;
+    margin-left: 100px;
     margin-top: 400px;
     
    
@@ -51,7 +54,8 @@
     -webkit-animation: char_jump 1.3s steps(12) 1;
     z-index: 2;
     transform : scale(2);
-    margin-left: 150px;
+    position: absolute;
+    margin-left: 100px;
     margin-top: 400px;   
 }
 
@@ -64,11 +68,59 @@
     -webkit-animation: mob1_run 2s steps(12) infinite;
     z-index: 2;
     transform : scale(1.5);
+    position: absolute;
     margin-left: 570px;
-    margin-top: -90px;
+    margin-top: 440px;
     
 }
 
+.coin2{
+    width: 70px;
+    height: 70px;
+    background: url('./img/coins/coin_70_70.png');
+    animation: coin2 1s steps(6) infinite;
+    -moz-animation: coin2 1s steps(6) infinite;
+    -webkit-animation: coin2 1s steps(6) infinite;
+    z-index: 2;
+    transform : scale(0.7);
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 300px; 
+}
+
+#cartel_loose{
+    width: 340px;
+    height: 247px;
+    background: url('./img/carteles/cartel_loose.png');
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 11;
+    visibility: hidden;
+}
+
+#cartel_win{
+    width: 340px;
+    height: 247px;
+    background: url('./img/carteles/cartel_win_2.png');
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+    z-index: 11;
+    visibility: hidden;
+}
 
 .layer{
    min-height: 500px; 
@@ -86,18 +138,18 @@
    animation-play-state: running; /* permite pausar la animacion */
 }
 
-.layer-5{
+.layer-6{
     background-image: url("./img/background/11.png");
     animation-duration: 35s;    
 }
 
-.layer-4{
+.layer-5{
     background-image: url("./img/background/12.png");
     animation-duration: 25s;
 }
 
 
-.layer-3_5{
+.layer-4{
     background-image: url("./img/background/14.png");
     animation-duration: 20s;
 }
@@ -117,21 +169,6 @@
     animation-duration: 1s;
     z-index: 10;
 }
-
-.coin2{
-    width: 70px;
-    height: 70px;
-    background: url('./img/coins/coin_70_70.png');
-    animation: coin2 1s steps(6) infinite;
-    -moz-animation: coin2 1s steps(6) infinite;
-    -webkit-animation: coin2 1s steps(6) infinite;
-    z-index: 2;
-    transform : scale(0.7);
-    margin-left: 350px;
-    margin-top: -300px; 
-}
-
-
 
 
 /* Animacion del background */
