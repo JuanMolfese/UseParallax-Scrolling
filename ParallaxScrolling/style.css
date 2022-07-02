@@ -74,6 +74,16 @@
     
 }
 
+.mob2_run{
+    width: 128px;
+    height: 128px;
+    background: url('./img/char/mob2_run.png');
+    position: absolute;
+    margin-left: 570px;
+    margin-top: 440px;
+    z-index: 2;
+}
+
 .coin2{
     width: 70px;
     height: 70px;
