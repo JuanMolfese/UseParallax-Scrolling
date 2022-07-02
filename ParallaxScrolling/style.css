@@ -4,17 +4,16 @@
     position: relative;
     left: 0;
     top: 0;    
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
 
 .char_run{
     width: 128px;
     height: 128px;
     background: url('./img/char/char_mage_run.png');
-    animation: char_run 1s steps(8) infinite;
-    -moz-animation: char_run 1s steps(8) infinite;
-    -webkit-animation: char_run 1s steps(8) infinite;
+    animation: char_run 0.7s steps(8) infinite;
+    -moz-animation: char_run 0.7s steps(8) infinite;
+    -webkit-animation: char_run 0.7s  steps(8) infinite;
     z-index: 2;
     transform : scale(2);
     position: absolute;
@@ -27,9 +26,9 @@
     width: 128px;
     height: 128px;
     background: url('./img/char/char_mage_death.png');
-    animation: char_death 1.5s steps(11) 1 normal forwards;    
-    -moz-animation: char_death 1.5s steps(11) 1 forwards;
-    -webkit-animation: char_death 1.5s steps(11) 1 forwards;
+    animation: char_death 1.3s steps(11) 1 normal forwards;    
+    -moz-animation: char_death 1.3s steps(11) 1 forwards;
+    -webkit-animation: char_death 1.3s steps(11) 1 forwards;
     z-index: 2;
     transform : scale(2);
     position: absolute;
@@ -69,33 +68,29 @@
     z-index: 2;
     transform : scale(1.5);
     position: absolute;
-    margin-left: 570px;
-    margin-top: 440px;
-    
+    margin-top: 440px;    
 }
 
-.mob2_run{
-    width: 128px;
-    height: 128px;
-    background: url('./img/char/mob2_run.png');
-    position: absolute;
-    margin-left: 570px;
-    margin-top: 440px;
-    z-index: 2;
+#mob1_despl_X{
+    animation: mob1_desplace 3.5s linear infinite;  
 }
 
-.coin2{
+
+.coin{
     width: 70px;
     height: 70px;
     background: url('./img/coins/coin_70_70.png');
-    animation: coin2 1s steps(6) infinite;
-    -moz-animation: coin2 1s steps(6) infinite;
-    -webkit-animation: coin2 1s steps(6) infinite;
-    z-index: 2;
-    transform : scale(0.7);
+    animation: coin2 0.8s steps(6) infinite;  
+    -moz-animation: coin2 0.8s steps(6) infinite;
+    -webkit-animation: coin2 0.8s steps(6) infinite;
+    z-index: 2;    
     position: absolute;
-    margin-left: 350px;
-    margin-top: 300px; 
+    /* margin-left: 350px;*/
+    margin-top: 240px;
+}
+
+#coin_despl_X{
+    animation: coin1 4.5s linear infinite;  
 }
 
 #cartel_loose{
@@ -212,9 +207,19 @@
     100%{background-position: -1538px;}
 }
 
+@keyframes mob1_desplace{
+    0%{transform: translateX(1100px);}
+    100%{transform: translateX(-80px);}
+}
+
 @keyframes coin2{
     0%{background-position: 0px;}
     100%{background-position: -420px;}
+}
+
+@keyframes coin1{
+    0%{transform: translateX(1700px);}
+    100%{transform: translateX(-80px);}
 }
 
 

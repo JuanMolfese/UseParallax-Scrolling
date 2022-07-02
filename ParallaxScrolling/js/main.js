@@ -49,7 +49,7 @@ if (!gameOver){
              
             char.classList.add("char_death");
             gameOver = true;            
-            this.setTimeout(detener_fondo, 50);
+            this.setTimeout(detener_fondo, 1200);
             this.setTimeout(mostrar_cartel_loose,1200);            
         }       
         }
